@@ -20,7 +20,7 @@ while True:
     print("n\MENU")
     print("1. cadastrar cliente")
     print("2. imprimr cliente")
-    print("3. sair")
+    print("3.sair")
     opcao=int(input("escolha uma opção: "))
     if opcao == 1:
         nome = input("nome do cliente: ")
