@@ -2,18 +2,18 @@ def cadastrar_cliente(produtos,nome,valor,imposto1,imposto2,imposto3,quantidade,
     produto={
     'Nome':nome,
     'Valor':valor,
-    'Imposto1':imposto1
-    'Imposto2':imposto2
-    'imposto3':imposto3
-    'Quantidade': quantidade
-    'Frete': frete
+    'Imposto1':imposto1,
+    'Imposto2':imposto2,
+    'imposto3':imposto3,
+    'Quantidade': quantidade,
+    'Frete': frete,
     'Lucro': lucro
     }
     produtos.append(produto)
     print("Produto cadastrado com sucesso!")
 
 def imprimir_produto(produtos):
-    for indice,produito in enumerate(produtos):
+    for indice,produto in enumerate(produtos):
         print(f"cliente {indice+1}")
         print(f"Nome: {produto['Nome']}")
         print(f"Valor:{produto['Valor']}")

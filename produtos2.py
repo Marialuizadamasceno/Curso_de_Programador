@@ -40,9 +40,9 @@ while True:
         Imposto1=imposto1[b]
         Imposto2=imposto2[b]
         Imposto3=imposto3[b]
-        Imposto1= (Valor[b] * imposto1)
-        Imposto2= (Valor[b] *imposto2)
-        Imposto3=(Valor[b] * imposto3)
+        Imposto1= (Valor * imposto1)
+        Imposto2= (Valor *imposto2)
+        Imposto3=(Valor * imposto3)
         Frete=frete/estoque
         custo=(valor+Imposto1+Imposto2+Imposto3)+Frete
         custos.append(custo)
