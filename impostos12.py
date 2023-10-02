@@ -35,9 +35,9 @@ while True:
     if opcao == 1:
         nome = input("produto: ")
         valor= float(input("valor"))
-        imposto1= float(input("imposto 1"))
-        imposto2= float(input("imposto 2"))
-        imposto3= float(input("imposto 3"))
+        imposto1= float(input("imposto 1: "))
+        imposto2= float(input("imposto 2: "))
+        imposto3= float(input("imposto 3: "))
         quantidade= float(input("quantidade"))
         frete=float(input("frete"))
         frete=frete/quantidade
