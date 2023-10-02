@@ -6,39 +6,47 @@ fretes= []
 lucros= []
 custos=[]
 vendas=[]
-imposto1=0.12
-imposto2=0.06
-imposto3=0.03
+imposto11=[]
+imposto22=[]
+imposto33=[]
 while True:
-    menu=float(input("escolha uma opção para o menu:\n"
+    print("n\MENU"
     "1 - insira um novo produto\n"
-    "2 - atualiar produto\n"
+    "2 - valor total\n"
     "3 - imprimir\n"
     "4 - deletar\n"
-    "5 - sair\n"))
+    "5 - sair\n")
+    opcao=int(input("escolha uma opção: "))
     if menu == 1:
         nome = input("digite o nome do produto: ")
         nomes.append(nome)
-        valor = input("digite o valor: ")
+        valor = float(input("digite o valor: "))
         valores.append(valor)
-        estoque = input("digite o estoque: ")
+        estoque = float(input("digite o estoque: "))
         estoques.append(estoque)
         frete = float(input("digite o valor do frete: "))
         fretes.append(frete)
         lucro = float(input("quanto deseja deseja ganhar em porcentagem: "))
         lucros.append(lucro)
-    for i in range(len(nomes)):
-        nomes=nome[i]
-        estoques=estoque[i]
-        lucros=(lucro/estoques)[i]
-        valores=valor[i]
-        imposto1= (valor * 0.12)
-        imposto2= (valor * 0.06)
-        imposto3=(valor * 0.03)
-        custo=(valor+imposto1+imposto2+imposto3)+(frete/estoque)
+        imposto1=float(input("imposto 1"))
+        imposto11.append(imposto1)
+        imposto2=float(input("imposto 2"))
+        imposto22.append(imposto2)
+        imposto3=float(input("imposto 3"))
+        imposto33.append(imposto3)
+        print("salvo")
+        elif opcao==2:
+        Valor= valor[b]
+        Imposto1=imposto1[b]
+        Imposto2=imposto2[b]
+        Imposto3=imposto3[b]
+        Imposto1= (Valor * imposto1)
+        Imposto2= (Valor *imposto2)
+        Imposto3=(Valor * imposto3)
+        Frete=frete/estoque
+        custo=(valor+Imposto1+Imposto2+Imposto3)+Frete
         custos.append(custo)
         venda=(custo+(custo*lucro))
         vendas.append(venda)
-    for i in range(len(nome)):
         print(nome, "custo:", custo, "venda",venda)
     
