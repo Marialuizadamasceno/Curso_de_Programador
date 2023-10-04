@@ -69,7 +69,7 @@ def aprovado_nota(alunos):
 
 def reprovado_nota(alunos):
     for indice, aluno in enumerate (alunos):
-        if aluno['edia'] < 7:
+        if aluno['Media'] < 7:
             print(f"Nome: {aluno['Nome']}")
             print(f"Media: {aluno['Media']}")
             print("aluno reprovado:")
