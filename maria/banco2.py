@@ -14,3 +14,4 @@ try:
         con.close() #fechar a conexão
 except mysql.connector.Error as err: #nomear
     print("erro",err)
+    
