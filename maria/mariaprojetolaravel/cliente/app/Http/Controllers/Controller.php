@@ -83,4 +83,9 @@ class Controller extends BaseController
         $endereco->update();
         return redirect() ->route('cliente')->with('success','Atualizado com sucesso');
     }
+    public function delete($id){
+    $cliente= Cliente:: find ($id);
+    $cliente->delete();
+    return redirect() ->route('cliente')->with('success','Deletado com sucesso');
+}
 }

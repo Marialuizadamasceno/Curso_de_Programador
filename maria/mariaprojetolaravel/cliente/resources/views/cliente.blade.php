@@ -52,8 +52,9 @@
       <th>{{$cliente->complemento}}</td>
       <th>
       <div class="btn-group" role="group" aria-label="Basic mixed styles example">
-      <a href="{{route('editar',$cliente->id)}}"><button type="button" class="btn btn-danger">editar</button> 
-  <button type="button" class="btn btn-warning">excluir</button>
+      <a href="{{route('editar',$cliente->id)}}"><button type="button" class="btn btn-danger">editar</button></a>
+      <a href="{{route('delete',$cliente->id)}}">
+  <button type="button" class="btn btn-warning">excluir</button></a>
 </div>
 </div></td>
 

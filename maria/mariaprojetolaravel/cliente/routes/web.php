@@ -19,3 +19,4 @@ Route::post('criar/endereco', [Controller::class,'criar'])->name('criar');
 Route::get('cliente', [Controller::class,'cliente'])->name('cliente');
 Route::get('editar/{id}', [Controller::class,'editar'])->name('editar');
 Route::post('atualizar/{id}', [Controller::class,'atualizar'])->name('atualizar');
+Route::get('delete/{id}', [Controller::class,'delete'])->name('delete');
