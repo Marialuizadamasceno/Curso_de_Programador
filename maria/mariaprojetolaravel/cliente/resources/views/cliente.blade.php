@@ -10,6 +10,11 @@
         <a href="{{route('index')}}"><button type="submit" class="btn btn-primary">novo cadastro</button></a>
       </div>
     <br>
+    @if(session('success'))
+    <div class="alert alert-success">
+      {{session('success')}}
+</div>
+    @endif
   <table class="table table-striped table-dark">
   <thead>
     <tr>
@@ -17,6 +22,19 @@
       <th scope="col">nome</th>
       <th scope="col">email</th>
       <th scope="col">telefone</th>
+      <th scope="col">cep</th>
+      <th scope="col">rua</th>
+      <th scope="col">bairro</th>
+      <th scope="col">cidade</th>
+      <th scope="col">numero</th>
+      <th scope="col">complemento</th>
+      <th scope="col">Ação</th>
+      
+     
+
+
+      </div>
+
     </tr>
   </thead>
   <tbody>
@@ -26,6 +44,19 @@
       <th>{{$cliente->nome}}</td>
       <th>{{$cliente->email}}</td>
       <th>{{$cliente->telefone}}</td>
+      <th>{{$cliente->cep}}</td>
+      <th>{{$cliente->rua}}</td>
+      <th>{{$cliente->bairro}}</td>
+      <th>{{$cliente->cidade}}</td>
+      <th>{{$cliente->numero}}</td>
+      <th>{{$cliente->complemento}}</td>
+      <th>
+      <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+      <a href="{{route('editar',$cliente->id)}}"><button type="button" class="btn btn-danger">editar</button> 
+  <button type="button" class="btn btn-warning">excluir</button>
+</div>
+</div></td>
+
       
     </tr>
     @endforeach
